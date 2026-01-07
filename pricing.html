@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Packages | Connects Contacts</title>
+<style>
+:root{--primary-blue:#004a8e;--cta-red:#d3200d;--hover-gold:#ffd700;--gray-light:#f8f9fa;--gray-dark:#666;--text-dark:#333;--white:#fff;--border-radius:12px;}
+body{font-family:Roboto,sans-serif;margin:0;padding:0;color:var(--text-dark);}
+a{text-decoration:none;}
+.nav{background:var(--primary-blue);color:var(--white);display:flex;justify-content:space-between;align-items:center;padding:16px;position:sticky;top:0;z-index:1000;}
+.nav-menu{display:flex;gap:24px;list-style:none;margin:0;}
+.nav-menu a{color:#fff;font-weight:500;}
+.nav-menu a.active{border-bottom:2px solid var(--hover-gold);}
+.nav-cta{background:var(--cta-red);padding:12px 28px;border-radius:8px;font-weight:700;color:#fff;}
+.hero{padding:100px 24px;text-align:center;background:var(--gray-light);}
+.hero h1{font-size:clamp(42px,8vw,64px);background:linear-gradient(135deg,#004a8e,#0066cc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:24px;}
+.hero p{font-size:20px;color:var(--gray-dark);margin-bottom:32px;max-width:700px;}
+.cta-button{background:var(--cta-red);color:#fff;padding:16px 32px;border-radius:8px;font-weight:700;text-decoration:none;display:inline-block;font-size:18px;}
+.cta-button:hover{background:#b5190d;transform:translateY(-1px);}
+.pricing-grid{padding:80px 24px;background:#fff;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px;max-width:1200px;margin:0 auto;}
+.price-card{background:var(--gray-light);padding:40px;border-radius:var(--border-radius);text-align:center;position:relative;overflow:hidden;}
+.price-card.most-popular{position:relative;}
+.price-card.most-popular:before{content:"MOST POPULAR";background:var(--cta-red);color:#fff;padding:8px 16px;font-size:12px;font-weight:700;position:absolute;top:0;left:50%;transform:translateX(-50%);white-space:nowrap;}
+.price-card h3{font-size:28px;margin-bottom:16px;color:var(--primary-blue);}
+.price-card .price{font-size:48px;font-weight:700;color:var(--cta-red);margin-bottom:24px;}
+.price-card ul{list-style:none;padding:0;text-align:left;margin-bottom:32px;}
+.price-card li{margin-bottom:12px;padding-left:24px;position:relative;}
+.price-card li:before{content:"✓";color:var(--cta-red);font-weight:700;font-size:18px;position:absolute;left:0;}
+.price-card a{background:var(--cta-red);color:#fff;padding:16px 32px;border-radius:8px;font-weight:700;display:inline-block;width:100%;box-sizing:border-box;}
+.audit-cta{background:var(--primary-blue);margin-top:16px;}
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;background:var(--primary-blue);padding:18px;text-align:center;z-index:9999;}
+.sticky-cta a{background:var(--cta-red);color:#fff;padding:14px 28px;border-radius:8px;font-weight:700;}
+footer{background:#f4f4f4;padding:32px 24px;margin-top:40px;}
+footer a{color:#004a8e;display:block;margin-bottom:4px;}
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/" class="logo">CONNECTS CONTACTS</a>
+  <ul class="nav-menu">
+    <li><a href="/solutions">Solutions</a></li>
+    <li><a href="/pricing" class="active">Pricing</a></li>
+    <li><a href="/industries">Industries</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+  <a href="/order-audit" class="nav-cta">Order Audit</a>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1>Pricing Packages</h1>
+    <p>Not ready for full system? Start with $697 Revenue Leak Audit - identifies $2,500+ gaps in 48hrs or FREE.</p>
+    <a href="/order-audit" class="cta-button">Start Audit → $697</a>
+  </div>
+</section>
+
+<section class="pricing-grid">
+  <div class="price-card">
+    <h3>Revenue Leak Audit</h3>
+    <div class="price">$697<br><span style="font-size:18px;">one-time</span></div>
+    <ul>
+      <li>48hr call/text/form analysis</li>
+      <li>$2,500+ lost revenue guarantee</li>
+      <li>Custom gap recommendations</li>
+      <li>30-day AI trial included</li>
+    </ul>
+    <a href="/order-audit">Order Audit Now</a>
+  </div>
+
+  <div class="price-card most-popular">
+    <h3>Growth</h3>
+    <div class="price">$1,497<span style="font-size:24px;">/mo</span></div>
+    <ul>
+      <li>All 7 core solutions</li>
+      <li>AI Receptionist + Unified Inbox</li>
+      <li>GBP + Reviews + Database</li>
+      <li>Direct Mail + Printing</li>
+      <li>Priority support</li>
+    </ul>
+    <a href="/order-audit">Start with Audit</a>
+    <a href="/contact" class="audit-cta">Custom Quote</a>
+  </div>
+
+  <div class="price-card">
+    <h3>Pro</h3>
+    <div class="price">$2,497<span style="font-size:24px;">/mo</span></div>
+    <ul>
+      <li>Everything in Growth</li>
+      <li>Custom integrations</li>
+      <li>White-glove onboarding</li>
+      <li>Monthly strategy calls</li>
+      <li>Enterprise reporting</li>
+    </ul>
+    <a href="/order-audit">Start with Audit</a>
+    <a href="/contact" class="audit-cta">Custom Quote</a>
+  </div>
+</section>
+
+<div class="sticky-cta"><a href="/order-audit">Order Audit → $697</a></div>
+
+<footer>
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:32px;">
+      <div>
+        <h4>Solutions</h4>
+        <a href="/ai-receptionist">AI Receptionist</a>
+        <a href="/unified-omnichannel-inbox">Unified Inbox</a>
+        <a href="/gbp-optimization">GBP Optimization</a>
+        <a href="/5-star-review-engine">5 Star Review</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="/solutions">Solutions</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/about-us">About Us</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 647-123-4567<br>✉️ hello@connectscontacts.com</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:24px;color:var(--gray-dark);">© 2026 Connects Contacts. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
