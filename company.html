@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Company | Connects Contacts</title>
+<style>
+:root{--primary-blue:#004a8e;--cta-red:#d3200d;--hover-gold:#ffd700;--gray-light:#f8f9fa;--gray-dark:#666;--text-dark:#333;--white:#fff;--border-radius:12px;}
+body{font-family:Roboto,sans-serif;margin:0;padding:0;color:var(--text-dark);}
+a{text-decoration:none;}
+.nav{background:var(--primary-blue);color:var(--white);display:flex;justify-content:space-between;align-items:center;padding:16px;position:sticky;top:0;z-index:1000;}
+.nav-menu{display:flex;gap:24px;list-style:none;margin:0;}
+.nav-menu a{color:#fff;font-weight:500;}
+.nav-menu a.active{border-bottom:2px solid var(--hover-gold);}
+.nav-cta{background:var(--cta-red);padding:12px 28px;border-radius:8px;font-weight:700;color:#fff;}
+.hero{padding:100px 24px;text-align:center;background:var(--gray-light);}
+.hero h1{font-size:clamp(42px,8vw,64px);background:linear-gradient(135deg,#004a8e,#0066cc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:24px;}
+.hero p{font-size:20px;color:var(--gray-dark);margin-bottom:32px;max-width:700px;}
+.cta-button{background:var(--cta-red);color:#fff;padding:16px 32px;border-radius:8px;font-weight:700;text-decoration:none;display:inline-block;font-size:18px;}
+.cta-button:hover{background:#b5190d;transform:translateY(-1px);}
+.content{padding:80px 24px;background:#fff;}
+.content-section{max-width:800px;margin:0 auto 64px auto;}
+.content-section h2{font-size:36px;text-align:center;margin-bottom:32px;color:var(--primary-blue);}
+.content-section p{font-size:18px;line-height:1.7;margin-bottom:24px;}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:32px;margin-top:40px;}
+.team-member{text-align:center;}
+.team-member img{width:120px;height:120px;border-radius:50%;margin-bottom:16px;}
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;background:var(--primary-blue);padding:18px;text-align:center;z-index:9999;}
+.sticky-cta a{background:var(--cta-red);color:#fff;padding:14px 28px;border-radius:8px;font-weight:700;}
+footer{background:#f4f4f4;padding:32px 24px;margin-top:40px;}
+footer a{color:#004a8e;display:block;margin-bottom:4px;}
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/" class="logo">CONNECTS CONTACTS</a>
+  <ul class="nav-menu">
+    <li><a href="/solutions">Solutions</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="/industries">Industries</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+  <a href="/order-audit" class="nav-cta">Order Audit</a>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1>Our Company</h1>
+    <p>Connects Contacts Inc. - Bootstrapped SMB growth engine serving York Region + beyond.</p>
+    <a href="/order-audit" class="cta-button">Start Audit → $697</a>
+  </div>
+</section>
+
+<section class="content">
+  <div class="content-section">
+    <h2>Mission</h2>
+    <p>Stop SMBs from losing $126K/year to broken communications. Our AI-powered system captures every lead, follows up instantly, converts automatically.</p>
+  </div>
+  
+  <div class="content-section">
+    <h2>Vision</h2>
+    <p>300+ cities across North America. Small Business Growth Squad™ franchise model. Every trade business gets Fortune 500 systems at SMB prices.</p>
+  </div>
+  
+  <div class="content-section">
+    <h2>Our Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <div style="background:#ddd;width:120px;height:120px;border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;color:var(--gray-dark);">Jeff</div>
+        <h4>Jeff Miller</h4>
+        <p>Founder - 20+ years printing, direct mail, mortgage broker. Building SMB systems that scale.</p>
+      </div>
+      <div class="team-member">
+        <div style="background:#ddd;width:120px;height:120px;border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;color:var(--gray-dark);">AI Team</div>
+        <h4>Growth Squad</h4>
+        <p>AI engineers + sales automation experts powering your 24/7 revenue machine.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sticky-cta"><a href="/order-audit">Order Audit → $697</a></div>
+
+<footer>
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:32px;">
+      <div>
+        <h4>Solutions</h4>
+        <a href="/ai-receptionist">AI Receptionist</a>
+        <a href="/unified-omnichannel-inbox">Unified Inbox</a>
+        <a href="/gbp-optimization">GBP Optimization</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="/solutions">Solutions</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/about-us">About Us</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 647-123-4567<br>✉️ hello@connectscontacts.com</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:24px;color:var(--gray-dark);">© 2026 Connects Contacts Inc. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
