@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Connects Contacts</title>
+<style>
+:root{--primary-blue:#004a8e;--cta-red:#d3200d;--hover-gold:#ffd700;--gray-light:#f8f9fa;--gray-dark:#666;--text-dark:#333;--white:#fff;--border-radius:12px;}
+body{font-family:Roboto,sans-serif;margin:0;padding:0;color:var(--text-dark);}
+a{text-decoration:none;}
+.nav{background:var(--primary-blue);color:var(--white);display:flex;justify-content:space-between;align-items:center;padding:16px;position:sticky;top:0;z-index:1000;}
+.nav-menu{display:flex;gap:24px;list-style:none;margin:0;}
+.nav-menu a{color:#fff;font-weight:500;}
+.nav-menu a.active{border-bottom:2px solid var(--hover-gold);}
+.nav-cta{background:var(--cta-red);padding:12px 28px;border-radius:8px;font-weight:700;color:#fff;}
+.hero{padding:100px 24px;text-align:center;background:var(--gray-light);}
+.hero h1{font-size:clamp(42px,8vw,64px);background:linear-gradient(135deg,#004a8e,#0066cc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:24px;}
+.hero p{font-size:20px;color:var(--gray-dark);margin-bottom:32px;max-width:700px;}
+.cta-button{background:var(--cta-red);color:#fff;padding:16px 32px;border-radius:8px;font-weight:700;text-decoration:none;display:inline-block;font-size:18px;}
+.cta-button:hover{background:#b5190d;transform:translateY(-1px);}
+.content{padding:80px 24px;background:#fff;}
+.content-section{max-width:900px;margin:0 auto 64px auto;}
+.content-section h2{font-size:36px;text-align:center;margin-bottom:32px;color:var(--primary-blue);}
+.content-section h3{font-size:28px;margin:40px 0 20px 0;color:var(--text-dark);}
+.content-section p{font-size:18px;line-height:1.7;margin-bottom:24px;}
+.timeline{padding:40px 0;border-left:4px solid var(--primary-blue);margin:40px 0;}
+.timeline-item{position:relative;padding-left:32px;margin-bottom:32px;}
+.timeline-item:before{content:"";position:absolute;left:-20px;top:8px;width:12px;height:12px;background:var(--cta-red);border-radius:50%;}
+.credibility-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:32px;margin:40px 0;}
+.cred-item{text-align:center;padding:24px;background:var(--gray-light);border-radius:var(--border-radius);}
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;background:var(--primary-blue);padding:18px;text-align:center;z-index:9999;}
+.sticky-cta a{background:var(--cta-red);color:#fff;padding:14px 28px;border-radius:8px;font-weight:700;}
+footer{background:#f4f4f4;padding:32px 24px;margin-top:40px;}
+footer a{color:#004a8e;display:block;margin-bottom:4px;}
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/" class="logo">CONNECTS CONTACTS</a>
+  <ul class="nav-menu">
+    <li><a href="/solutions">Solutions</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="/industries">Industries</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+  <a href="/order-audit" class="nav-cta">Order Audit</a>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1>About Us</h1>
+    <p>From print shop to AI growth engine. Bootstrapped in Alliston, serving SMBs nationwide.</p>
+    <a href="/order-audit" class="cta-button">Start Audit → $697</a>
+  </div>
+</section>
+
+<section class="content">
+  <div class="content-section">
+    <h2>Our Story</h2>
+    <p>Started as a print shop watching SMB clients lose leads to voicemail. Built direct mail campaigns that delivered. Saw the pattern: trades lose $5K+/month to broken systems.</p>
+    
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Print Shop → Direct Mail</h3>
+        <p>10+ years printing/EDDM. Learned what converts locally.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Mortgage Broker</h3>
+        <p>8 years sales. Mastered lead follow-up systems.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Connects Contacts</h3>
+        <p>AI + automation for SMBs. Revenue Leak Audit finds gaps instantly.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2>Credibility</h2>
+    <div class="credibility-grid">
+      <div class="cred-item">
+        <h4>York Region Based</h4>
+        <p>Alliston, ON. Serving GTA trades daily.</p>
+      </div>
+      <div class="cred-item">
+        <h4>Bootstrapped</h4>
+        <p>No VC. Real results for real SMBs.</p>
+      </div>
+      <div class="cred-item">
+        <h4>SinaLite Partner</h4>
+        <p>Wholesale printing backbone.</p>
+      </div>
+      <div class="cred-item">
+        <h4>Growth Squad™</h4>
+        <p>Franchise model scaling nationwide.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2>Team</h2>
+    <p>Jeff Miller (Founder): Print industry veteran, direct mail expert, sales systems builder. Alliston-based entrepreneur solving SMB revenue leaks one audit at a time.</p>
+  </div>
+</section>
+
+<div class="sticky-cta"><a href="/order-audit">Order Audit → $697</a></div>
+
+<footer>
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:32px;">
+      <div>
+        <h4>Solutions</h4>
+        <a href="/ai-receptionist">AI Receptionist</a>
+        <a href="/unified-omnichannel-inbox">Unified Inbox</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="/solutions">Solutions</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/company">Company</a>
+        <a href="/about-us">About Us</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 647-123-4567<br>✉️ hello@connectscontacts.com</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:24px;color:var(--gray-dark);">© 2026 Connects Contacts Inc. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
