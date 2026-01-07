@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Solutions | Connects Contacts</title>
+<style>
+:root{--primary-blue:#004a8e;--cta-red:#d3200d;--hover-gold:#ffd700;--gray-light:#f8f9fa;--gray-dark:#666;--text-dark:#333;--white:#fff;--border-radius:12px;}
+body{font-family:Roboto,sans-serif;margin:0;padding:0;color:var(--text-dark);}
+a{text-decoration:none;}
+.nav{background:var(--primary-blue);color:var(--white);display:flex;justify-content:space-between;align-items:center;padding:16px;position:sticky;top:0;z-index:1000;}
+.nav-menu{display:flex;gap:24px;list-style:none;margin:0;}
+.nav-menu a{color:#fff;font-weight:500;}
+.nav-menu a.active{border-bottom:2px solid var(--hover-gold);}
+.nav-cta{background:var(--cta-red);padding:12px 28px;border-radius:8px;font-weight:700;color:#fff;}
+.hero{padding:100px 24px;text-align:center;background:var(--gray-light);}
+.hero h1{font-size:clamp(42px,8vw,64px);background:linear-gradient(135deg,#004a8e,#0066cc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:24px;}
+.hero p{font-size:20px;color:var(--gray-dark);margin-bottom:32px;max-width:700px;}
+.cta-button{background:var(--cta-red);color:#fff;padding:16px 32px;border-radius:8px;font-weight:700;text-decoration:none;display:inline-block;font-size:18px;}
+.cta-button:hover{background:#b5190d;transform:translateY(-1px);}
+.solutions-grid{padding:80px 24px;background:#fff;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:1200px;margin:0 auto;}
+.solution-card{background:var(--gray-light);padding:32px;border-radius:var(--border-radius);text-align:center;transition:transform 0.3s;}
+.solution-card:hover{transform:translateY(-8px);}
+.solution-card h3{font-size:24px;margin-bottom:16px;color:var(--primary-blue);}
+.solution-card a{display:inline-block;background:var(--primary-blue);color:#fff;padding:12px 24px;border-radius:8px;font-weight:600;margin-top:16px;}
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;background:var(--primary-blue);padding:18px;text-align:center;z-index:9999;}
+.sticky-cta a{background:var(--cta-red);color:#fff;padding:14px 28px;border-radius:8px;font-weight:700;}
+footer{background:#f4f4f4;padding:32px 24px;margin-top:40px;}
+footer a{color:#004a8e;display:block;margin-bottom:4px;}
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/" class="logo">CONNECTS CONTACTS</a>
+  <ul class="nav-menu">
+    <li><a href="/solutions" class="active">Solutions</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="/industries">Industries</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+  <a href="/order-audit" class="nav-cta">Order Audit</a>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1>Our Solutions</h1>
+    <p>Complete SMB growth system: capture leads 24/7, convert automatically, scale predictably. Start with Revenue Leak Audit to identify your biggest gaps.</p>
+    <a href="/order-audit" class="cta-button">Start Audit → $697</a>
+  </div>
+</section>
+
+<section class="solutions-grid">
+  <div class="solution-card">
+    <h3>AI Receptionist</h3>
+    <p>24/7 call answering + lead qualification</p>
+    <a href="/ai-receptionist">Learn More</a>
+  </div>
+  <div class="solution-card">
+    <h3>Unified Inbox</h3>
+    <p>Consolidate calls, texts, emails, reviews</p>
+    <a href="/unified-omnichannel-inbox">Learn More</a>
+  </div>
+  <div class="solution-card">
+    <h3>GBP Optimization</h3>
+    <p>Dominate Google Maps + local SEO</p>
+    <a href="/gbp-optimization">Learn More</a>
+  </div>
+  <div class="solution-card">
+    <h3>5-Star Review Engine</h3>
+    <p>Automate reviews across platforms</p>
+    <a href="/5-star-review-engine">Learn More</a>
+  </div>
+  <div class="solution-card">
+    <h3>Database Engagement</h3>
+    <p>Reactivate cold leads automatically</p>
+    <a href="/database-engagement">Learn More</a>
+  </div>
+  <div class="solution-card">
+    <h3>Shared Direct Mail</h3>
+    <p>Co-op postcards 90% cheaper</p>
+    <a href="/shared-direct-mail">Learn More</a>
+  </div>
+  <div class="solution-card">
+    <h3>Printing Wholesaler</h3>
+    <p>SinaLite wholesale + API</p>
+    <a href="/printing-wholesaler">Learn More</a>
+  </div>
+</section>
+
+<div class="sticky-cta"><a href="/order-audit">Order Audit → $697</a></div>
+
+<footer>
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:32px;">
+      <div>
+        <h4>Solutions</h4>
+        <a href="/ai-receptionist">AI Receptionist</a>
+        <a href="/unified-omnichannel-inbox">Unified Inbox</a>
+        <a href="/gbp-optimization">GBP Optimization</a>
+        <a href="/5-star-review-engine">5 Star Review</a>
+        <a href="/database-engagement">Database Engagement</a>
+        <a href="/shared-direct-mail">Shared Direct Mail</a>
+        <a href="/printing-wholesaler">Printing Wholesaler</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="/solutions">Solutions</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/about-us">About Us</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 647-123-4567<br>✉️ hello@connectscontacts.com</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:24px;color:var(--gray-dark);">© 2026 Connects Contacts. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
